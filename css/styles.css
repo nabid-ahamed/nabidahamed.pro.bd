@@ -44,20 +44,11 @@ section {
     align-items: center;
     z-index: 100;
 }
-.header-icons {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-}
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--text-color);
     cursor: pointer;
-   
+    margin-left: 2rem;
 }
 
 
@@ -87,6 +78,7 @@ body.light-mode {
     position: relative; /* important */
     font-size: 1.7rem;
     color: var(--text-color);
+    margin-left: 4rem;
     transition: .3s;
 }
 
@@ -543,11 +535,9 @@ span {
         }
 
         .navbar a {
-            display: flex;
+            display: block;
             font-size: 2rem;
             margin: 2rem 0;
-            align-items: center;
-            gap: 4rem;
         }
 
     .home {
@@ -569,8 +559,6 @@ span {
     .home-img img {
         width: 260px;
         height: 260px;
-        margin-top: 2rem;
-        box-shadow: 0 0 0 6px var(--main-color), 0 0 40px var(--main-color);
     }
 
     .about {
@@ -675,7 +663,41 @@ span {
     transform: translate(-50%, 0);
 }
 
+/* Responsive */
 
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .home-content {
+        margin-left: 0;
+    }
+
+        .home-content h1 {
+            font-size: 3.8rem;
+            line-height: 1.2;
+        }
+
+        .home-content h3 {
+            font-size: 2rem;
+        }
+
+    .home-img {
+        margin-left: 0;
+    }
+
+        .home-img img {
+            width: 65%;
+            max-width: 260px;
+            margin-top: 2rem;
+            box-shadow: 0 0 30px var(--main-color), 0 0 60px rgba(0, 238, 255, 0.4);
+        }
+
+}
 
 /* ================= PREMIUM ACHIEVEMENT SECTION ================= */
 
