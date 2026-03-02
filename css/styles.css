@@ -116,12 +116,6 @@ body.light-mode {
     justify-content: center;
     align-items: center;
 }
-.home-content {
-    margin-left: -40px; /* adjust this value */
-}
-.home-img {
-    margin-left: 200px; /* adjust this value */
-}
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -594,23 +588,14 @@ span {
 }
 
 @media (max-width: 365px) {
+
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+
     .home-img img {
-        width: 90vh;
+        width: 75%;
     }
-
-    .about-img img{
-        width: 90vh;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
-    }
-
 }
 /* ================= EDUCATION TIMELINE ================= */
 
@@ -703,25 +688,38 @@ span {
 
 @media (max-width: 768px) {
 
-    .timeline::before {
-        left: 20px;
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
     }
 
-    .timeline-item {
-        width: 100%;
-        padding-left: 5rem;
-        padding-right: 2rem;
-        text-align: left;
+    .home-content {
+        margin-left: 0;
     }
 
-        .timeline-item.right {
-            left: 0;
+        .home-content h1 {
+            font-size: 3.8rem;
+            line-height: 1.2;
         }
 
-    .circle {
-        left: 20px;
-        transform: translate(-50%, 0);
+        .home-content h3 {
+            font-size: 2rem;
+        }
+
+    .home-img {
+        margin-left: 0;
     }
+
+        .home-img img {
+            width: 65%;
+            max-width: 260px;
+            margin-top: 2rem;
+        }
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 /* ================= PREMIUM ACHIEVEMENT SECTION ================= */
 
