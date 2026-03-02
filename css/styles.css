@@ -44,11 +44,20 @@ section {
     align-items: center;
     z-index: 100;
 }
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--text-color);
     cursor: pointer;
-    margin-left: 2rem;
+   
 }
 
 
@@ -78,7 +87,6 @@ body.light-mode {
     position: relative; /* important */
     font-size: 1.7rem;
     color: var(--text-color);
-    margin-left: 4rem;
     transition: .3s;
 }
 
@@ -535,9 +543,11 @@ span {
         }
 
         .navbar a {
-            display: block;
+            display: flex;
             font-size: 2rem;
             margin: 2rem 0;
+            align-items: center;
+            gap: 4rem;
         }
 
     .home {
