@@ -147,7 +147,7 @@ span {
         object-fit: cover;
         border-radius: 50%;
         border: 8px solid rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 0 6px var(--main-color), 0 0 40px var(--main-color);
+        box-shadow: 0 0 0 4px var(--main-color), 0 0 20px var(--main-color);
     }
 
 
@@ -701,8 +701,10 @@ span {
 
 @media (max-width: 768px) {
 
-    .home {
+    home {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         gap: 3rem;
     }
@@ -712,7 +714,7 @@ span {
     }
 
         .home-content h1 {
-            font-size: 3.8rem;
+            font-size: 3.2rem;
             line-height: 1.2;
         }
 
@@ -725,10 +727,10 @@ span {
     }
 
         .home-img img {
-            width: 65%;
-            max-width: 260px;
-            margin-top: 2rem;
-            box-shadow: 0 0 30px var(--main-color), 0 0 60px rgba(0, 238, 255, 0.4);
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
 }
@@ -815,4 +817,32 @@ span {
     font-size: 1.6rem;
     color: #4CAF50;
     text-align: center;
+}
+/*Extra  */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.education-box,
+.achievements-card {
+    transition: all .35s ease;
+}
+
+    .education-box:hover,
+    .achievements-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 15px 40px rgba(0,0,0,.4);
+    }
+.home-content h1 {
+    background: linear-gradient(90deg,#00f2fe,#4facfe);
+    -webkit-background-clip: text;
+    color: transparent;
 }
