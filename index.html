@@ -25,7 +25,6 @@
       <header class="header">
           <a href="#" class="logo">Portfolio</a>
 
-          <i class="bx bx-menu" id="menu-icon"></i>
           <nav class="navbar">
               <a href="#home" class="active">Home</a>
               <a href="#about">About</a>
@@ -34,7 +33,11 @@
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
           </nav>
-          <i class='bx bx-moon' id="darkMode-icon"></i>
+
+          <div class="header-icons">
+              <i class='bx bx-moon' id="darkMode-icon"></i>
+              <i class="bx bx-menu" id="menu-icon"></i>
+          </div>
       </header>
 
       <!-- Home Section -->
@@ -231,11 +234,11 @@
               <div class="projects-box">
                   <img src="images/port1.jpg" alt="" />
                   <div class="projects-layer">
-                      <h4>MGV ARTWORKS</h4>
+                      <h4>MHC-AFMS</h4>
                       <p>
-                          My own personal artwork website.
+                          Mental Health Care Administrative Financial Management System
                       </p>
-                      <a href="https://mgvartworks.netlify.app"><i class="bx bx-link-external"></i></a>
+                      <a href="https://github.com/nabid-ahamed/Mental-Health-Care--Administrative-Financial-Management-System"><i class="bx bx-link-external"></i></a>
                   </div>
               </div>
 
@@ -291,67 +294,42 @@
       <!-- contact -->
 
       <section class="contact" id="contact">
-          <div class="max-w-xl mx-auto mb-16 text-left">
-              <h3 class="text-2xl font-bold text-center mb-6 text-white">Send Me a Message</h3>
+          <section class="contact" id="contact">
+              <h2 class="heading">Contact <span>Me</span></h2>
 
               <form id="contact-form"
                     action="https://formspree.io/f/xjgejwbl"
-                    method="POST"
-                    class="space-y-4">
+                    method="POST">
 
-                  <!-- Email subject -->
-                  <input type="hidden" name="_subject" value="New message from jawadur.pro.bd">
+                  <input type="hidden" name="_subject" value="New message from portfolio">
 
-                  <!-- Name -->
-                  <input type="text"
-                         name="name"
-                         placeholder="Your Name"
-                         required
-                         class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-400" />
+                  <div class="input-box">
+                      <input type="text" name="name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                  </div>
 
-                  <!-- Email -->
-                  <input type="email"
-                         name="email"
-                         placeholder="Your Email"
-                         required
-                         class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-400" />
+                  <div class="input-box">
+                      <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                  </div>
 
-                  <!-- Phone (optional) -->
-                  <input type="tel"
-                         name="phone"
-                         placeholder="Phone Number (optional)"
-                         class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-400" />
+                  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
-                  <!-- Message -->
-                  <textarea name="message"
-                            rows="5"
-                            placeholder="Your Message"
-                            required
-                            class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-400"></textarea>
-
-                  <!-- Honeypot -->
                   <input type="text" name="_gotcha" style="display:none">
 
-                  <!-- Submit -->
-                  <button type="submit"
-                          class="w-full py-3 rounded-lg bg-sky-500 text-black font-bold hover:bg-sky-400 transition">
-                      Send Message
-                  </button>
+                  <button type="submit" class="btn">Send Message</button>
               </form>
 
-              <p id="form-status"
-                 class="hidden mt-4 text-green-400 font-semibold text-center">
+              <p id="form-status">
                   ✅ Message sent successfully! I’ll get back to you soon.
               </p>
-
-          </div>
+          </section>
       </section>
 
       <!-- footer -->
 
       <footer class="footer">
           <div class="footer-text">
-              <p>Copyright &copy; 2026 by Nabid Ahamed Noushad | All Rights Reserved|</p>
+              <p>&copy; 2026 Nabid Ahamed Noushad | All Rights Reserved|</p>
           </div>
 
           <div class="footer-iconTap">
