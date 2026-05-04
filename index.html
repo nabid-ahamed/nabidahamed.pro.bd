@@ -303,7 +303,10 @@
                     action="https://formspree.io/f/xjgejwbl"
                     method="POST">
 
-                  <input type="hidden" name="_subject" value="New message from portfolio">
+                  <input type="hidden" name="_subject" value="New message from Portfolio Website">
+
+                  <!-- ✅ ADD THIS -->
+                  <input type="hidden" name="source" value="This message is coming from my Portfolio Website">
 
                   <div class="input-box">
                       <input type="text" name="name" placeholder="Your Name" required>
@@ -321,11 +324,11 @@
                   <button type="submit" class="btn">Send Message</button>
               </form>
 
-              <p id="form-status">
+              <p id="form-status" style="display:none;">
                   ✅ Message sent successfully! I’ll get back to you soon.
               </p>
           </section>
-      </section>
+      
 
       <!-- footer -->
 
